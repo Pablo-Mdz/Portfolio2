@@ -30,7 +30,7 @@ $(document).ready(function() {
     });
 // begin add	
 	var $container = $('#container');
-	// init
+	// in
 	$container.isotope({
 		// options
 		itemSelector: '.item',
