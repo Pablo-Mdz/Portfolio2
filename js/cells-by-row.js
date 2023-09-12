@@ -14,10 +14,8 @@ function cellsByRowDefinition( LayoutMode ) {
   CellsByRow.prototype._resetLayout = function() {
     
     this.itemIndex = 0;
-    // measurements
     this.getColumnWidth();
     this.getRowHeight();
-    // set cols
     this.cols = Math.floor( this.isotope.size.innerWidth / this.columnWidth );
     this.cols = Math.max( this.cols, 1 );
   };
