@@ -50,7 +50,7 @@ if ( typeof define === 'function' && define.amd ) {
     ],
     cellsByRowDefinition );
 } else {
-  // browser global
+  
   cellsByRowDefinition(
     window.Isotope.LayoutMode
   );
