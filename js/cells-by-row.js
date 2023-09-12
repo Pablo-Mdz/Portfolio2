@@ -15,16 +15,14 @@ function cellsByRowDefinition( LayoutMode ) {
     
     this.itemIndex = 0;
     this.getColumnWidth();
-    this.getRowHeight();
-    this.cols = Math.floor( this.isotope.size.innerWidth / this.columnWidth );
-    this.cols = Math.max( this.cols, 1 );
-  };
+    
+};
 
-  CellsByRow.prototype._getItemLayoutPosition = function( item ) {
+CellsByRow.prototype._getItemLayoutPosition = function( item ) {
     item.getSize();
+    this.getColumnWidth();
     var col = this.itemIndex % this.cols;
     var row = Math.floor( this.itemIndex / this.cols );
-    // center item within cell
     var x = ( col + 0.5 ) * this.columnWidth - item.size.outerWidth / 2;
     var y = ( row + 0.5 ) * this.rowHeight - item.size.outerHeight / 2;
     this.itemIndex++;
