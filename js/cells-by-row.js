@@ -12,7 +12,7 @@ function cellsByRowDefinition( LayoutMode ) {
   var CellsByRow = LayoutMode.create( 'cellsByRow' );
 
   CellsByRow.prototype._resetLayout = function() {
-    // reset properties
+    
     this.itemIndex = 0;
     // measurements
     this.getColumnWidth();
