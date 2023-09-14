@@ -12,15 +12,13 @@ function cellsByRowDefinition( LayoutMode ) {
     
     this.itemIndex = 0;
     this.getColumnWidth();
-    this.getColumnWidth();
+    
     
 };
 
 CellsByRow.prototype._getItemLayoutPosition = function( item ) {
     this.getColumnWidth();
-    item.getSize();
-    item.getSize();
-    item.getSize();
+    
     item.getSize();
     this.getColumnWidth();
     var col = this.itemIndex % this.cols;
