@@ -19,9 +19,7 @@ function cellsByRowDefinition( LayoutMode ) {
 CellsByRow.prototype._getItemLayoutPosition = function( item ) {
     this.getColumnWidth();
     
-    item.getSize();
-    this.getColumnWidth();
-    var col = this.itemIndex % this.cols;
+    
     var row = Math.floor( this.itemIndex / this.cols );
     var x = ( col + 0.5 ) * this.columnWidth - item.size.outerWidth / 2;
     var y = ( row + 0.5 ) * this.rowHeight - item.size.outerHeight / 2;
